@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Nunito } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,6 +9,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const nunito = Nunito({
+  variable: "--font-nunito-sans",
   subsets: ["latin"],
 });
 
@@ -23,10 +28,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
+    <html lang="en" className={`${nunito.variable} antialiased`}>
+      {/* <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      > */}
+      <body className="bg-cream text-black font-nunito">
+        <div className="container mx-auto p-8">
+          <header className="text-center py-4">
+            <h1 className="text-6xl text-rust font-bold">
+              Saint Claude Yoga Center
+            </h1>
+          </header>
+        </div>
         {children}
       </body>
     </html>
