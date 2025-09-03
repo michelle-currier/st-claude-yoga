@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Nunito } from "next/font/google";
 import "./globals.css";
 
+import Header from "@/components/header";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -32,15 +34,9 @@ export default function RootLayout({
       {/* <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       > */}
-      <body className="bg-cream text-black font-nunito">
-        <div className="container mx-auto p-8">
-          <header className="text-center py-4">
-            <h1 className="text-6xl text-rust font-bold">
-              Saint Claude Yoga Center
-            </h1>
-          </header>
-        </div>
-        {children}
+      <body className="text-black px-8">
+        <Header />
+        <div className="container mx-auto mt-40">{children}</div>
       </body>
     </html>
   );
