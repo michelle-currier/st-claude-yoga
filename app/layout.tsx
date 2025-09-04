@@ -36,7 +36,7 @@ export default function RootLayout({
       {/* <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       > */}
-      <body className="text-black px-8 h-screen justify-between">
+      <body className="text-black px-8 h-screen justify-between flex flex-col">
         <Header />
         <div className="container mx-auto mt-12 max-w-6xl">{children}</div>
         <Footer />

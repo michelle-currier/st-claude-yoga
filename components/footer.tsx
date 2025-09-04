@@ -1,8 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faGlobe,
   faPhone,
   faEnvelope,
   faSpa,
@@ -11,7 +8,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="w-full mt-12">
+    <footer className="w-full mt-12 mb-4">
       <div className="mx-auto row-start-3 flex flex-wrap items-center justify-between max-w-6xl">
         <div>
           <a
