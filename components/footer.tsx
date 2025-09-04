@@ -6,12 +6,13 @@ import {
   faPhone,
   faEnvelope,
   faSpa,
+  faTerminal,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   return (
-    <footer className="mt-12 ml-10">
-      <div className="row-start-3 flex flex-wrap items-center justify-between max-w-6xl">
+    <footer className="w-full mt-12">
+      <div className="mx-auto row-start-3 flex flex-wrap items-center justify-between max-w-6xl">
         <div>
           <a
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -39,7 +40,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGlobe} />
+            <FontAwesomeIcon icon={faTerminal} />
             made by m. currier designs
           </a>
           <a>
