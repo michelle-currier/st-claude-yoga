@@ -4,20 +4,22 @@ export default function Home() {
   return (
     <>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <h1 className="text-6xl text-rust font-bold">
+        <h1 className="text-5xl text-rust font-bold">
           Welcome to the Saint Claude Yoga Center
         </h1>
-        <section className="p-6 rounded-lg shadow-lg">
+        <section className="p-6 rounded-lg shadow-xl bg-white">
           <h2 className="text-4xl font-semibold">About Us</h2>
           <p className="mt-4 text-black">
-            This site uses the Nunito font with a custom color palette. Enjoy
-            the combination of cream, peach, rust, green, and black.
+            Community Supported Yoga + Pilates in the Saint Claude neighborhood
+            of New Orleans offering accessible, lineage - based classes on a
+            sliding scale plus open practice sessions and community wellness
+            events
           </p>
         </section>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            className="rounded-full btn-green flex items-center justify-center gap-2 font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href="https://saintclaudeyogacenter.union.site/"
             target="_blank"
             rel="noopener noreferrer"
@@ -32,62 +34,15 @@ export default function Home() {
             Register for class
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://saintclaudeyogacenter.union.site/"
+            className="rounded-full btn-rust flex items-center justify-center font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
+            href="https://saintclaudeyogacenter.union.site/passes"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            Get Passes
           </a>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </>
   );
 }

@@ -40,3 +40,13 @@ h1 {
 h2 {
   color: var(--rust);
 }
+
+.btn-rust {
+  background-color: var(--rust);
+  color: var(--background);
+}
+
+.btn-green {
+  background-color: var(--green);
+  color: var(--background);
+}
