@@ -13,7 +13,7 @@ export default function Footer() {
         <div>
           <a
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="mailto:lisa.giordano@gmail.com"
+            href="mailto:info@saintclaudeyoga.com"
             target="_blank"
             rel="noopener noreferrer"
           >
